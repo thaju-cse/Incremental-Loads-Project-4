@@ -1,0 +1,2 @@
+latitude,longitude,generationtime_ms,utc_offset_seconds,timezone,timezone_abbreviation,elevation,time,interval,temperature,windspeed,winddirection,is_day,weathercode,
+12.875,77.625,0.06282329559326172,0,GMT,GMT,892.0,2026-02-05T16:30,900,20.3,8.0,85,0,0,

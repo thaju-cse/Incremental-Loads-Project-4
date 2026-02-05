@@ -1,5 +1,6 @@
 import weather_api
 import json_to_csv
+import csv_to_postgres
 from pathlib import Path
 
 def main():
@@ -17,9 +18,9 @@ def main():
     # Weather_api returns json file file which is further used to transform into a csv file
     csv_file_path = PROCESSED_DIR / f"weather_{PARAMS['latitude']}_{PARAMS['longitude']}.csv"
     # custom made csv file path with latitude and longitude in the file name
-    json_to_csv.main(json_file_path, csv_file_path)
-    
-
+    recent_temp = json_to_csv.main(json_file_path, csv_file_path)
+    status = csv_to_postgres.main(recent_temp)
+    print("\n*** Completed ***.")
 
 if __name__=="__main__":
     main()
