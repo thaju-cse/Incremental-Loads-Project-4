@@ -27,7 +27,7 @@ in a database and everuthing done by using python.
 |_______________|_________________________________________|
 |Language       |Python                                   |
 |Libraries      |requests, pandas, datetime, json, pathlib|
-|                sqlalchemy, sys                          |
+|               |sqlalchemy, sys                          |
 |OS             |Ubuntu(WSL)                              |
 |DBMS           |Postgres                                 |
 |Files          |CSV, JSON                                |
